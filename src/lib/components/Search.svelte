@@ -39,7 +39,7 @@
 				if (item === null || item === undefined) {
 					return '';
 				}
-				return item.codePostal + ' - ' + item.nom;
+				return `<span>${item.codePostal}</span> - ${item.nom}`;
 			}}
 			placeholder="Commune ou Code postal"
 			searchFunction={loadItems}
